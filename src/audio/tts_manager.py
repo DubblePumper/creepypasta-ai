@@ -505,6 +505,8 @@ class TTSManager:
                 self.logger.error(f"ElevenLabs TTS authentication failed: {e}")
             elif "payment" in error_msg or "402" in error_msg:
                 self.logger.error(f"ElevenLabs TTS payment required: {e}")
+            elif "502" in error_msg or "503" in error_msg or "server error" in error_msg:
+                self.logger.warning(f"ElevenLabs temporary server error: {e}")
             else:
                 self.logger.error(f"ElevenLabs TTS generation failed: {e}")
             return None
@@ -636,7 +638,12 @@ class TTSManager:
                     raise AttributeError("No suitable ElevenLabs API method found")
                     
             except Exception as api_error:
-                self.logger.error(f"ElevenLabs API call failed: {api_error}")
+                error_msg = str(api_error).lower()
+                # Check for temporary server errors that might be worth retrying
+                if "502" in error_msg or "503" in error_msg or "server error" in error_msg:
+                    self.logger.warning(f"ElevenLabs temporary server error: {api_error}")
+                else:
+                    self.logger.error(f"ElevenLabs API call failed: {api_error}")
                 return None
             
             if not audio:

@@ -13,6 +13,10 @@ This module handles all audio-related functionality for the CreepyPasta AI appli
 
 ### Supported Services
 - **ElevenLabs**: High-quality AI voices with emotional expression
+  - **Advanced Chunking**: Handles stories exceeding 10,000 character limit
+  - **Intelligent Text Splitting**: Splits at sentence boundaries for natural flow
+  - **Auto-Recovery**: Robust error handling with fallback support
+  - **Quality Preservation**: Maintains voice consistency across chunks
 - **OpenAI TTS**: Professional-grade speech synthesis
 - **Azure Speech Services**: Microsoft's cloud-based TTS
 - **Google TTS**: Reliable fallback option
@@ -138,3 +142,23 @@ audio:
 - **Resource Pooling**: Efficient resource utilization
 - **Queue Management**: Manage audio processing queues
 - **Load Balancing**: Distribute processing across available resources
+
+## ElevenLabs Advanced Features
+
+### Intelligent Text Chunking
+- **Character Limit Handling**: Automatically detects and handles 10,000+ character stories
+- **Smart Text Splitting**: Splits text at sentence boundaries for natural speech flow
+- **Word-Level Fallback**: Handles exceptionally long sentences with word-level splitting
+- **Audio Concatenation**: Seamlessly combines multiple audio chunks into single file
+
+### Error Handling & Recovery
+- **Server Error Detection**: Identifies temporary server issues (502, 503 errors)
+- **Quota Management**: Handles API quota and payment-related errors
+- **Automatic Fallback**: Falls back to gTTS when ElevenLabs is unavailable
+- **Retry Logic**: Smart retry mechanisms for temporary network issues
+
+### Quality Preservation
+- **Voice Consistency**: Maintains voice settings across all chunks
+- **Seamless Audio**: No audible breaks between combined audio segments
+- **File Management**: Automatic cleanup of temporary chunk files
+- **Progress Tracking**: Real-time logging of chunking and generation progress

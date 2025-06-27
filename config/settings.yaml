@@ -217,7 +217,7 @@ multilingual:
       gtts_lang: "nl"
       openai_voice: "onyx"
       azure_voice: "nl-NL-ColetteNeural"
-      elevenlabs_voice: "bVMeCyTHy58xNoL34h3p"  # Dutch voice
+      elevenlabs_voice: "LKZ8pGqli4t1rXhzN7hq"  # Dutch voice
       
     ru:  # Russian
       name: "Русский"
