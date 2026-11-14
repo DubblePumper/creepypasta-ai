@@ -6,7 +6,6 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/yourusername/creepypastaAI)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -147,8 +146,8 @@ graph TB
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/creepypastaAI.git
-   cd creepypastaAI
+   git clone https://github.com/DubblePumper/creepypasta-ai.git
+   cd creepypasta-ai
    ```
 
 2. **Create Virtual Environment** (Recommended)
@@ -566,7 +565,7 @@ CreepyPasta AI supports flexible execution modes for different use cases:
 ## 📊 Project Structure
 
 ```
-creepypastaAI/
+creepypasta-ai/
 ├── 📁 src/                     # Source code modules
 │   ├── 🎵 audio/               # Audio processing components
 │   │   ├── tts_manager.py      # Text-to-speech management
@@ -929,9 +928,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Getting Help
 
 - 📖 **Documentation**: Check this README and `/docs` folder
-- 🐛 **Bug Reports**: [Open an issue](https://github.com/yourusername/creepypastaAI/issues)
-- 💡 **Feature Requests**: [Create a feature request](https://github.com/yourusername/creepypastaAI/issues/new?template=feature_request.md)
-- 💬 **Community Discussion**: [GitHub Discussions](https://github.com/yourusername/creepypastaAI/discussions)
+- 🐛 **Bug Reports**: [Open an issue](https://github.com/DubblePumper/creepypasta-ai/issues)
+- 💡 **Feature Requests**: [Create a feature request](https://github.com/DubblePumper/creepypasta-ai/issues/new?template=feature_request.md)
+- 💬 **Community Discussion**: [GitHub Discussions](https://github.com/DubblePumper/creepypasta-ai/discussions)
 
 --- 
 ## 🙏 Todo
